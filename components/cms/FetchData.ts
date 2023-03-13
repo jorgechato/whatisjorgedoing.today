@@ -10,7 +10,7 @@ export function GetArticleContent(slug: string) {
     const file = `${folder}/${slug}.md`;
     const rawFile = fs.readFileSync(file, 'utf8');
 
-    return matter(rawFile).content;
+    return matter(rawFile);
 }
 
 export function GetArticlesMetadata(): ArticleMetadata[] {
@@ -35,4 +35,4 @@ export function GetArticlesMetadata(): ArticleMetadata[] {
     });
 
     return articles;
-};
+}

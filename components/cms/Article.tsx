@@ -3,13 +3,14 @@ import { GetArticleContent } from './FetchData';
 
 export function Article(props: any) {
     const slug = props.slug;
-    const content = GetArticleContent(slug);
+    const article = GetArticleContent(slug);
 
     return (
         <>
-            <h1>{slug}</h1>
+            <h1>{article.data.title}</h1>
+            <h2>{article.data.date}</h2>
             <div>
-            {content}
+            {article.content}
             </div>
         </>
     );
