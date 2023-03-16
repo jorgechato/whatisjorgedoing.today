@@ -13,7 +13,7 @@ export function GetArticleContent(slug: string) {
     return matter(rawFile);
 }
 
-export function GetArticlesMetadata(): ArticleMetadata[] {
+export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[] {
     const folder = process.env.ARTICLES_LOCATION;
     const files = fs.readdirSync(folder);
     const mdArticles = files.filter((file) => file.endsWith('.md'));
@@ -32,7 +32,9 @@ export function GetArticlesMetadata(): ArticleMetadata[] {
             toc: article.data.toc,
             summary: article.data.summary,
         };
-    });
+    }).sort(
+    (a, b) => { return new Date(b.date).getTime() - new Date(a.date).getTime(); }
+    ).slice(0, limit);
 
     return articles;
 }
