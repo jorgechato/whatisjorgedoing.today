@@ -1,6 +1,6 @@
 ---
 title: "My TOOLSET"
-date: "2020-01-19T16:38:01Z"
+date: "2020-01-19"
 author: Jorge
 categories:
 - code

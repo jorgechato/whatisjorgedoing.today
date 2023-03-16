@@ -1,6 +1,6 @@
 ---
 title: "Traveling with a HACKER Vol.2"
-date: "2019-10-21T08:36:17Z"
+date: "2019-10-21"
 author: Jorge
 categories:
 - terminal

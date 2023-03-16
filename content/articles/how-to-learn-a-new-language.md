@@ -1,6 +1,6 @@
 ---
 title: "How to Learn a New Language"
-date: 2019-08-31T12:48:29Z
+date: "2019-08-31"
 author: Jorge
 categories:
 - code 

@@ -1,6 +1,6 @@
 ---
 title: "The CHEAPEST server ever, a Platform journey Vol.2"
-date: "2019-09-22T13:29:03Z"
+date: "2019-09-22"
 author: Jorge
 categories:
 - code
