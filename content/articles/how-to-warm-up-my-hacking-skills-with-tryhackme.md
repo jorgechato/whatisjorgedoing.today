@@ -20,7 +20,7 @@ TryHackMe is an online platform for learning and teaching cyber security. It is 
 
 This article is a **Writeups** for the  [_Basic Pentesting_ room](https://tryhackme.com/room/basicpentestingjt).
 
-{{< figure src="/img/2020/03/image.png" >}}
+<img src="/img/2020/03/image.png">
 
 **1️. Deploy the machine and connect to our network**
 
@@ -78,9 +78,9 @@ We  have 3 Open PORTS:
 
 If we open this IP in the browser we see a server sunning.
 
-{{< figure src="/img/2020/03/image-6.png" >}}
+<img src="/img/2020/03/image-6.png">
 
-{{< figure src="/img/2020/03/image-2.png" >}}
+<img src="/img/2020/03/image-2.png">
 
 **3. What is the name of the hidden directory on the web server(enter name without /)?**
 
@@ -90,11 +90,11 @@ If we open this IP in the browser we see a server sunning.
 
 We could use [gobuster](https://github.com/OJ/gobuster) to search for directories with brute-force but since we have a hint here let's try it first... ok `/dev` isn't the directory we are looking for but we see an apache server running. Maybe `/development` is the right endpoint... Yes, we nailed it.
 
-{{< figure src="/img/2020/03/image-5.png" >}}
+<img src="/img/2020/03/image-5.png">
 
-{{< figure src="/img/2020/03/image-7.png" >}}
+<img src="/img/2020/03/image-7.png">
 
-{{< figure src="/img/2020/03/image-8.png" >}}
+<img src="/img/2020/03/image-8.png">
 
 **4. User brute-forcing to find the username & password**
 
@@ -162,6 +162,3 @@ $ cat pass.back
 heresareallystrongpasswordthatfollowsthepasswordpolicy$$
 ```
 
-> The stream is in **Spanish**
-
-{{< youtube UK9YkhEI4CU >}}

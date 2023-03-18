@@ -28,7 +28,7 @@ First of all I need to add a **disclaimer** here. The techniques I am using are 
 
 I came back to my _Shared House_ after exploring the city when the lag in my iPhone started to annoy me. Men, I was in Japan, the fastest Internet connection in the world. The trigger for this experiment was the frustration of uploading to instagram a picture that takes forever.
 
-{{< figure src="/img/2019/10/IMG_0873.jpg" caption="Figuring out why the Wifi is so slow in the Share House" >}}
+<img src="/img/2019/10/IMG_0873.jpg" caption="Figuring out why the Wifi is so slow in the Share House">
 
 You probably expect the video surveillance system to be secure in any venue. Curious enough in my first Share House in Tokyo this wasn't the case. In fact the router was _"more secure"_ than the repeaters and the surveillance system.
 
@@ -37,7 +37,7 @@ $ ifconfig # broadcast 192.168.1.255
 $ sudo nmap -sP 192.168.1.0/24
 ```
 
-{{< figure src="/img/2019/10/Screenshot_2019-10-10_at_15_59_07.png" >}}
+<img src="/img/2019/10/Screenshot_2019-10-10_at_15_59_07.png">
 
 Not so much devices were connected to the network but something caught my eye. Multiple `Elecom` systems have a consecutive  IP addresses (n+1). From **192.168.1.21** to **192.168.1.25**.
 
@@ -45,7 +45,7 @@ When I was checking-in, in the front desk monitor there were broadcasting five s
 
 > It is looking suspicious... wow Basic Auth, there is no way the default password for admin is enabled. **[WAT](https://www.destroyallsoftware.com/talks/wat)?**
 
-{{< figure src="/img/2019/10/Screenshot_2019-10-10_at_18_25_36.png" >}}
+<img src="/img/2019/10/Screenshot_2019-10-10_at_18_25_36.png">
 
 The staff were notified... but, I was wondering... Is this a common scenario? Will I trust my security to this venues. After all, they usually do a great job, computers though is a skill they need to work on.
 
@@ -53,10 +53,10 @@ The second venue were slightly better in the video surveillance system. They use
 
 But **_ZERO_** security in any system connected to the main network. Router, switch, repeaters...
 
-{{< figure  src="/img/2019/10/Screenshot_2019-10-11_at_12_23_03.png" width="3104" height="1978" >}}
-{{< figure  src="/img/2019/10/Screenshot-2019-10-11-at-12.41.04.png" width="3104" height="1978" >}}
-{{< figure  src="/img/2019/10/Screenshot-2019-10-11-at-12.29.25.png" width="3104" height="1978" >}}
-{{< figure  src="/img/2019/10/Screenshot-2019-10-12-at-22.45.11.png" width="3104" height="1978" >}}
+<img  src="/img/2019/10/Screenshot_2019-10-11_at_12_23_03.png" width="3104" height="1978">
+<img  src="/img/2019/10/Screenshot-2019-10-11-at-12.41.04.png" width="3104" height="1978">
+<img  src="/img/2019/10/Screenshot-2019-10-11-at-12.29.25.png" width="3104" height="1978">
+<img  src="/img/2019/10/Screenshot-2019-10-12-at-22.45.11.png" width="3104" height="1978">
 
 The search of the perfect venue, accommodation-technical security balance will drive me to Kyoto. Will the millennial city be the hidden gem of **Maikos** and _Hackers_?
 

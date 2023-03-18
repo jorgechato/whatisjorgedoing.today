@@ -44,7 +44,7 @@ Today we are going to focus on **SPA**. **** In a classic SPA, the HTML served t
 
 One of the **PRO**s for this mode is building static files, making it easy to deploy to a **CDN** (content delivery network).
 
-{{< figure src="/img/2019/09/Screenshot-2019-09-22-at-13.26.49.png" >}}
+<img src="/img/2019/09/Screenshot-2019-09-22-at-13.26.49.png">
 
 _Github pages_ will serve a Single Page application. All the api calls will go through a **Golang API REST** server which may or may not have external dependencies to build the data model.
 
@@ -54,7 +54,7 @@ Before going deep into the pipeline, let's create some important assets. You’l
 
 Go to [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)  _(Settings > Developer settings > Personal access tokens)_ and generate a new token.
 
-{{< figure src="/img/2019/09/Screenshot-2019-09-22-at-11.12.00.png" >}}
+<img src="/img/2019/09/Screenshot-2019-09-22-at-11.12.00.png">
 
 Since the token should be **private**, you’ll want to pass it to Travis **securely** in your [repository settings](https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings) or via [encrypted variables](https://docs.travis-ci.com/user/environment-variables#defining-encrypted-variables-in-travisyml) in .travis.yml.
 
@@ -75,7 +75,7 @@ $ travis encrypt --org GITHUB_ACCESS_TOKEN=xxx --add
 
 Travis CI can deploy your static files to [GitHub Pages](https://pages.github.com/) after a successful build. Depending on the Work Flow that fit your needs you might want to change the deployment branch. GitHub flow is a lightweight, branch-based workflow and you can know more about it in [this article](https://guides.github.com/introduction/flow/).
 
-{{< figure src="/img/2019/09/Screenshot-2019-09-22-at-13.38.17.png" >}}
+<img src="/img/2019/09/Screenshot-2019-09-22-at-13.38.17.png">
 
 ```yaml
 dist: trusty

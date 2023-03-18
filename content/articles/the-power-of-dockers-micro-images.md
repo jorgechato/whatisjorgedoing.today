@@ -52,7 +52,7 @@ Attack surface is less provable because  we reduce the dependencies (layers) on 
 
 ## How does a [pipeline](https://travis-ci.com/jorgechato/api.jorgechato.com) looks like?
 
-{{< figure src="/img/2019/09/ecr.png" >}}
+<img src="/img/2019/09/ecr.png">
 
 Let's assume our pipeline involves upload and tag an image into **AWS ECR**. After I commit my changes into a repository I get all the feedback about my code analysis and tests in a production like environment.
 

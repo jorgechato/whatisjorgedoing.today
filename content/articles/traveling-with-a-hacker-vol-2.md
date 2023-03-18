@@ -28,18 +28,18 @@ I will add the same **disclaimer** here in case [you didn't read **the**  **firs
 
 ---
 
-{{< figure src="/img/2019/10/IMG_3324-1.jpg" caption="Traditional Japanese Share House in Okinawa (not a Ryokan though)" >}}
+<img src="/img/2019/10/IMG_3324-1.jpg" caption="Traditional Japanese Share House in Okinawa (not a Ryokan though)">
 
 I am happy to say I couldn't access the video surveillance system in Okinawa, mainly because the IP cameras  **was conspicuous by its absence**.
 
 Routers and repeaters were as weak as in Tokyo. It's sad to realize how technology is handled in some venues. Don't get me wrong, I had my best times in the Share houses I have been and it made my solo trip a unique experience. Helping to some of them to improve the security was the proper way to thank the incredible people working there.
 
-{{< figure  src="/img/2019/10/Screenshot_2019-10-21_at_09_21_13.png" width="3104" height="1978" >}}
-{{< figure  src="/img/2019/10/Screenshot-2019-10-21-at-10.03.18.png" width="3104" height="1978" >}}
+<img  src="/img/2019/10/Screenshot_2019-10-21_at_09_21_13.png" width="3104" height="1978">
+<img  src="/img/2019/10/Screenshot-2019-10-21-at-10.03.18.png" width="3104" height="1978">
 
 Not only in the Share house but also in some restaurants, train stations, malls and public spaces they use a different `SSID` for each floor. Not sure why this is a thing though.
 
-{{< figure src="/img/2019/10/Screenshot_2019-10-21_at_14_25_23.png" >}}
+<img src="/img/2019/10/Screenshot_2019-10-21_at_14_25_23.png">
 
 In this case I wanted to go a step further and **out of curiosity** I wanted to **analyze the packages** in the network.
 

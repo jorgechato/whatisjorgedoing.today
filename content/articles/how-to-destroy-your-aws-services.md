@@ -28,7 +28,7 @@ As a developer I want to have a solid pipeline where I only need to be worry abo
 
 Discussing the pipeline is out of scope for this series of articles but I plan to have an entire set of articles about CI/CD. Just bare with me.
 
-{{< figure src="/img/2019/09/Screenshot-2019-09-01-at-10.38.13.png" >}}
+<img src="/img/2019/09/Screenshot-2019-09-01-at-10.38.13.png">
 
 In this scenario let's assume we want to work with Docker. Next up is getting our Docker image up into **AWS's EC2 Container Registry (ECR)**. While we could use Docker Hub, ECR comes with all of the usual benefits of using other AWS services with other AWS services.
 
@@ -36,7 +36,7 @@ Any time a new feature is committed to the master branch the pipeline will trigg
 
 Following with the architecture let's take a loot at the diagram.
 
-{{< figure src="/img/2019/09/Screenshot-2019-09-01-at-12.10.31.png" >}}
+<img src="/img/2019/09/Screenshot-2019-09-01-at-12.10.31.png">
 
 The main core of the platform will be the ECS cluster.
 
