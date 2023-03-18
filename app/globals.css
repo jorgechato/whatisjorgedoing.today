@@ -57,4 +57,10 @@
     --colors-grey-medium: #444446;
     --colors-grey-dark: #545456;
     --colors-grey-darker: #7c7c80;
---colors-grey-darkest: #aeaeb2;}
+    --colors-grey-darkest: #aeaeb2;
+}
+
+
+.prose {
+    max-width: inherit
+}
