@@ -23,9 +23,11 @@ export function Article(props: any) {
                         {date}
                     </div>
                 </header>
-                <Markdown className="text-justify text-base">
-                    {article.content}
-                </Markdown>
+                <article className="prose text-justify">
+                    <Markdown>
+                        {article.content}
+                    </Markdown>
+                </article>
             </article>
         </>
     );
