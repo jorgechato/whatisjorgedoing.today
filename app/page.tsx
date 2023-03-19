@@ -4,6 +4,10 @@ import { ArticleList } from '@/components/cms/ArticleList';
 import { H1Font } from '@/components/Fonts';
 
 
+export const metadata = {
+  title: 'What is Jorge really doing today?',
+};
+
 export default function Home() {
     return (
         <>
