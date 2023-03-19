@@ -4,9 +4,9 @@ import Link from 'next/link'
 export function Footer() {
     const socials = process.env.SOCIALS.map((social) => (
         <li key={social.name}>
-            <Link href={social.url} className="text-grey-darkest">
+            <a target="_blank" href={social.url} rel="noopener noreferrer" className="text-grey-darkest">
                 {social.name}
-            </Link>
+            </a>
         </li>
     ));
     const siteMap = process.env.SITE_MAP.map((endpoint) => (
