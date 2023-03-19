@@ -13,6 +13,14 @@ export function GetArticleContent(slug: string) {
     return matter(rawFile);
 }
 
+export function GetArticleMetadata(slug: string): ArticleMetadata {
+    const folder = process.env.ARTICLES_LOCATION;
+    const file = `${folder}/${slug}.md`;
+    const rawFile = fs.readFileSync(file, 'utf8');
+
+    return matter(rawFile).data as ArticleMetadata;
+}
+
 export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[] {
     const folder = process.env.ARTICLES_LOCATION;
     const files = fs.readdirSync(folder);
