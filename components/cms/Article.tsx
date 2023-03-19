@@ -19,11 +19,11 @@ export function Article(props: any) {
                             {article.data.title}
                         </span>
                     </h1>
-                    <div className="container font-display text-grey-darkest mx-auto px-4 text-xs mt-24 mb-12 tracking-wide text-center">
+                    <div className="container font-display text-grey-darkest mx-auto px-4 text-xs mt-14 mb-12 tracking-wide text-center">
                         {date}
                     </div>
                 </header>
-                <article className="prose text-justify">
+                <article className="prose text-justify text-base">
                     <Markdown>
                         {article.content}
                     </Markdown>
