@@ -11,7 +11,7 @@ export const generateStaticParams = async (): Promise<any[]> => {
     }));
 };
 
-export const generateMetadata = async ({ params }): Promise<Metadata> => {
+export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
     const article: ArticleMetadata = await GetArticleMetadata(params.slug);
     return { title: article.title }
 }
