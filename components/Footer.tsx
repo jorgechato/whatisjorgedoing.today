@@ -1,15 +1,22 @@
 import Link from 'next/link'
 
+import { Social, SiteMap } from './ConfigType';
+
+const config: {[key: string]: any} = require('@/my.config.js');
+
 
 export function Footer() {
-    const socials = process.env.SOCIALS.map((social) => (
+    const socialConfig: Social[] = config.SOCIALS ?? [];
+    const socials = socialConfig.map((social: Social) => (
         <li key={social.name}>
             <a target="_blank" href={social.url} rel="noopener noreferrer" className="text-grey-darkest">
                 {social.name}
             </a>
         </li>
     ));
-    const siteMap = process.env.SITE_MAP.map((endpoint) => (
+
+    const siteMapConfig: SiteMap[] = config.SITE_MAP ?? [];
+    const siteMap = siteMapConfig.map((endpoint: SiteMap) => (
         <li key={endpoint.name}>
             <Link href={endpoint.url} className="text-grey-darkest">
                 {endpoint.name}
