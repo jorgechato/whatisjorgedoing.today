@@ -4,9 +4,11 @@ import matter from 'gray-matter';
 
 import { ArticleMetadata } from './ArticleMetadata';
 
+const config: {[key: string]: any} = require('@/my.config.js');
+
 
 export function GetArticleContent(slug: string) {
-    const folder = process.env.ARTICLES_LOCATION;
+    const folder = config.ARTICLES_LOCATION ?? 'content/articles';
     const file = `${folder}/${slug}.md`;
     const rawFile = fs.readFileSync(file, 'utf8');
 
@@ -14,7 +16,7 @@ export function GetArticleContent(slug: string) {
 }
 
 export function GetArticleMetadata(slug: string): ArticleMetadata {
-    const folder = process.env.ARTICLES_LOCATION;
+    const folder = config.ARTICLES_LOCATION ?? 'content/articles';
     const file = `${folder}/${slug}.md`;
     const rawFile = fs.readFileSync(file, 'utf8');
 
@@ -22,7 +24,7 @@ export function GetArticleMetadata(slug: string): ArticleMetadata {
 }
 
 export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[] {
-    const folder = process.env.ARTICLES_LOCATION;
+    const folder = config.ARTICLES_LOCATION ?? 'content/articles';
     const files = fs.readdirSync(folder);
     const mdArticles = files.filter((file) => file.endsWith('.md'));
 
@@ -34,7 +36,7 @@ export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[]
             slug: fileName.replace('.md', ''),
             title: article.data.title,
             date: article.data.date,
-            autho: article.data.author,
+            author: article.data.author,
             categories: article.data.categories,
             tags: article.data.tags,
             toc: article.data.toc,
