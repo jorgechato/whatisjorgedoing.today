@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Article } from '@/components/cms/Article';
-import { GetArticlesMetadata, GetArticleMetadata } from '@/components/cms/FetchData';
+import { GetArticlesMetadata, GetArticleContent } from '@/components/cms/FetchData';
 import { ArticleMetadata } from '@/components/cms/ArticleMetadata';
 
 
@@ -12,7 +12,7 @@ export const generateStaticParams = async (): Promise<any[]> => {
 };
 
 export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
-    const article: ArticleMetadata = await GetArticleMetadata(params.slug);
+    const article: ArticleMetadata = await GetArticleContent(params.slug).data as ArticleMetadata;
     return { title: article.title }
 }
 
