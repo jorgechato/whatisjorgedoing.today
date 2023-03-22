@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer';
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+    //TODO: use document to add classes on body tag
     return (
         <html lang="en" className="overflow-x-hidden dark">
             <body className="bg-bg antialiased font-body bg-bg leading-7 text-body">
