@@ -1,6 +1,7 @@
 import fs from 'fs';
 
 import matter from 'gray-matter';
+import emoji from 'emoji-dictionary';
 
 import { ArticleMetadata } from './ArticleMetadata';
 
@@ -11,16 +12,11 @@ export function GetArticleContent(slug: string) {
     const folder = config.ARTICLES_LOCATION ?? 'content/articles';
     const file = `${folder}/${slug}.md`;
     const rawFile = fs.readFileSync(file, 'utf8');
+    const article = matter(rawFile);
+    article.content = article.content.replace(/:\w+:/gi, (name: string) => emoji.getUnicode(name));
+    article.data.title = article.data.title.replace(/:\w+:/gi, (name: string) => emoji.getUnicode(name));
 
-    return matter(rawFile);
-}
-
-export function GetArticleMetadata(slug: string): ArticleMetadata {
-    const folder = config.ARTICLES_LOCATION ?? 'content/articles';
-    const file = `${folder}/${slug}.md`;
-    const rawFile = fs.readFileSync(file, 'utf8');
-
-    return matter(rawFile).data as ArticleMetadata;
+    return article;
 }
 
 export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[] {
@@ -31,10 +27,11 @@ export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[]
     const articles = mdArticles.map((fileName) => {
         const raw = fs.readFileSync(`${folder}/${fileName}`, 'utf8');
         const article = matter(raw);
+        const title = article.data.title.replace(/:\w+:/gi, (name: string) => emoji.getUnicode(name));
 
         return {
             slug: fileName.replace('.md', ''),
-            title: article.data.title,
+            title: title,
             date: article.data.date,
             author: article.data.author,
             categories: article.data.categories,
