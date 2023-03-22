@@ -17,8 +17,8 @@ export function Footer() {
 
     const siteMapConfig: SiteMap[] = config.SITE_MAP ?? [];
     const siteMap = siteMapConfig.map((endpoint: SiteMap) => (
-        <li key={endpoint.name}>
-            <Link href={endpoint.url} className="text-grey-darkest">
+        <li key={endpoint.name} className="text-grey-darkest">
+            <Link href={endpoint.url}>
                 {endpoint.name}
             </Link>
         </li>
