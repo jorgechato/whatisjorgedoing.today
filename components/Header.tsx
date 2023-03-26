@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { TitleFont } from './Fonts';
 import { ThemeButton } from './ThemeButton';
 
-const config: {[key: string]: any} = require('@/my.config.js');
+const config: { [key: string]: any } = require('@/my.config.js');
 
 
 export function Header() {
@@ -13,9 +13,9 @@ export function Header() {
     return (
         <header className="container mx-auto p-4 mt-4 mb-12 sm:mb-24 flex items-center text-sm">
             <Link href="/">
-                <div dangerouslySetInnerHTML={{ __html: appName }} className={TitleFont.className} style={{ fontWeight:'bold' }}></div>
+                <div dangerouslySetInnerHTML={{ __html: appName }} className={TitleFont.className} style={{ fontWeight: 'bold' }}></div>
             </Link>
-            <ThemeButton/>
+            <ThemeButton />
         </header>
     )
 }

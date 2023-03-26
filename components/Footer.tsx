@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { Social, SiteMap } from './ConfigType';
 
-const config: {[key: string]: any} = require('@/my.config.js');
+const config: { [key: string]: any } = require('@/my.config.js');
 
 
 export function Footer() {
