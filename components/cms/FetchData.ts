@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 import matter from 'gray-matter';
-import emoji from 'emoji-dictionary';
+const emoji = require('emoji-dictionary');
 
 import { ArticleMetadata } from './ArticleMetadata';
 
