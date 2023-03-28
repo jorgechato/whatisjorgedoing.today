@@ -7,13 +7,13 @@ export function Project(props: { repo: PinnedRepos }) {
     return (
         <>
             <a href={repo.url} target='_blank'
-                className="border border-gray-300 rounded-md p-4 transform 
+                className="border border-grey-light rounded-md p-4
             transition duration-500 hover:border-emerald-600">
                 <div className="flex space-x-4">
                     <div className="flex-1 space-y-6 py-1">
                         <div className="font-semibold">
                             {repo.name}
-                            { repo.homepageUrl && <span className="text-grey-darkest text-xs"> PROD</span> }
+                            { repo.homepageUrl && <span className="text-grey-darker text-xs"> PROD</span> }
                             </div>
                         <div className="space-y-3">
                             <div className="text-sm text-grey-darkest">{repo.description}</div>

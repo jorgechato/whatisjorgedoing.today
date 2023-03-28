@@ -19,7 +19,7 @@ export function ProjectList(props: any) {
 
     return (
         <>
-            <div className="grid grid-cols-2 gap-4 mb-10">
+            <div className="grid xs:grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                 {loading && <ProjectSkeleton cards={6} />}
                 {pinnedRepos.map((repo: PinnedRepos) => <Project key={repo.url} repo={repo}/> )}
             </div>
