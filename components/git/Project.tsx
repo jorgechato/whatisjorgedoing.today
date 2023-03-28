@@ -13,7 +13,7 @@ export function Project(props: { repo: PinnedRepos }) {
                     <div className="flex-1 space-y-6 py-1">
                         <div className="font-semibold">
                             {repo.name}
-                            { repo.homepageUrl && <span class="text-grey-darkest text-xs"> PROD</span> }
+                            { repo.homepageUrl && <span className="text-grey-darkest text-xs"> PROD</span> }
                             </div>
                         <div className="space-y-3">
                             <div className="text-sm text-grey-darkest">{repo.description}</div>
