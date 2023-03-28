@@ -14,7 +14,7 @@ export function ArticleList(props: any) {
 
         return (
             <li key={article.slug}>
-                <Link href={article.slug}>
+                <Link href={`/${article.slug}`}>
                     <span className="font-bold border-b border-grey-darker border-dotted hover:border-none hover:bg-black hover:text-white">
                         {article.title}
                     </span>
