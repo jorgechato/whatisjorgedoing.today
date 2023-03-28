@@ -18,7 +18,7 @@ export function Project(props: { repo: PinnedRepos }) {
                         <div className="space-y-3">
                             <div className="text-sm text-grey-darkest">{repo.description}</div>
                             <div className="space-y-6 font-medium text-xs underline decoration-4 text-right"
-                                style={{ "text-decoration-color": repo.primaryLanguage.color }}>
+                                style={{ textDecorationColor: repo.primaryLanguage.color }}>
                                 {repo.primaryLanguage.name}
                             </div>
                         </div>
