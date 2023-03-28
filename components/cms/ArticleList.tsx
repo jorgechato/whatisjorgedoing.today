@@ -18,7 +18,7 @@ export function ArticleList(props: any) {
                     <span className="font-bold border-b border-grey-darker border-dotted hover:border-none hover:bg-black hover:text-white">
                         {article.title}
                     </span>
-                    <time dateTime="2019-08-31T00:00:00Z" className="text-grey-darkest text-sm sm:ml-2 w-full sm:w-24 inline-block">
+                    <time dateTime="2019-08-31T00:00:00Z" className="text-grey-darkest text-sm md:ml-2 w-full md:w-24 inline-block">
                         {date}
                     </time>
                 </Link>
@@ -28,7 +28,7 @@ export function ArticleList(props: any) {
 
     return (
         <>
-            <ul className="space-y-4 sm:space-y-0">
+            <ul className="space-y-4 md:space-y-0">
                 {articlesPreview}
             </ul>
         </>
