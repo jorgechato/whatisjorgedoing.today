@@ -11,7 +11,8 @@ tags:
 - terraform
 - platform-journey
 toc: true
-summary: This is Volume 1 of a series of articles about how to deploy and automate
+summary: |
+  This is Volume 1 of a series of articles about how to deploy and automate
   the AWS infrastructure as code. Terraform will be the king of this experiment. From
   now tho, we will cover the architecture and some real life scenarios with chaos
   engineering.
