@@ -9,7 +9,7 @@ export const metadata = {
 export default function Home() {
     return (
         <>
-            <h1 className="text-4xl mb-6 text-center">
+            <h1 className="text-2xl mb-6 text-center">
                 <span className={H1Font.className}>
                     Archive
                 </span>

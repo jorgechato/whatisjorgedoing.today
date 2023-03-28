@@ -12,13 +12,13 @@ export const metadata = {
 export default function Home() {
     return (
         <>
-            <div className={`text-2xl mb-4 ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
+            <div className={`text-xl mb-4 ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
                 <span className="text-grey-darkest">#</span> Projects
             </div>
             <ProjectList/>
 
             <Link href="/archive">
-                <div className={`text-2xl ${H1Font.className} my-4`} style={{ fontWeight: 'bold' }}>
+                <div className={`text-xl ${H1Font.className} my-4`} style={{ fontWeight: 'bold' }}>
                     <span className="text-grey-darkest">#</span> Archive
                 </div>
             </Link>
