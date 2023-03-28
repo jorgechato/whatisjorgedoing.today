@@ -18,11 +18,11 @@ export default function Home() {
             <ProjectList/>
 
             <Link href="/archive">
-                <span className={`text-2xl mb-4 ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
+                <div className={`text-2xl ${H1Font.className} my-4`} style={{ fontWeight: 'bold' }}>
                     <span className="text-grey-darkest">#</span> Archive
-                </span>
+                </div>
             </Link>
-            <ArticleList limit="5" />
+            <ArticleList limit="5"/>
             <Link href="/archive">
                 <span className="text-grey-darkest text-sm sm:ml-2 w-full sm:w-24">
                     ... More
