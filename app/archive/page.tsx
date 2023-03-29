@@ -9,10 +9,8 @@ export const metadata = {
 export default function Home() {
     return (
         <>
-            <h1 className="text-2xl mb-6 text-center">
-                <span className={H1Font.className}>
-                    Archive
-                </span>
+            <h1 className={`text-2xl mb-6 text-center ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
+                Archive
             </h1>
             <ArticleList />
         </>
