@@ -5,18 +5,22 @@ const emoji = require('emoji-dictionary');
 
 import { ArticleMetadata } from './ArticleMetadata';
 
-const config: {[key: string]: any} = require('@/my.config.js');
+const config: { [key: string]: any } = require('@/my.config.js');
 
 
 export function GetArticleContent(slug: string) {
     const folder = config.ARTICLES_LOCATION ?? 'content/articles';
     const file = `${folder}/${slug}.md`;
-    const rawFile = fs.readFileSync(file, 'utf8');
-    const article = matter(rawFile);
-    article.content = article.content.replace(/:\w+:/gi, (name: string) => emoji.getUnicode(name));
-    article.data.title = article.data.title.replace(/:\w+:/gi, (name: string) => emoji.getUnicode(name));
+    try {
+        const rawFile = fs.readFileSync(file, 'utf8');
+        const article = matter(rawFile);
+        article.content = article.content.replace(/:\w+:/gi, (name: string) => emoji.getUnicode(name));
+        article.data.title = article.data.title.replace(/:\w+:/gi, (name: string) => emoji.getUnicode(name));
 
-    return article;
+        return article;
+    } catch (error) {
+        return null;
+    }
 }
 
 export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[] {
@@ -40,7 +44,7 @@ export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[]
             summary: article.data.summary,
         };
     }).sort(
-    (a, b) => { return new Date(b.date).getTime() - new Date(a.date).getTime(); }
+        (a, b) => { return new Date(b.date).getTime() - new Date(a.date).getTime(); }
     ).slice(0, limit);
 
     return articles;
