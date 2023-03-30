@@ -47,3 +47,29 @@ export function GetPinnedRepos(): Promise<PinnedRepos[]> {
         .then((res) => res.json())
         .then((res) => res.data.user.pinnedItems.nodes);
 }
+
+
+export function GetReadme(): Promise<string> {
+    return fetch("https://api.github.com/graphql", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+        },
+        body: JSON.stringify({
+            query: `
+        query {
+            repository(owner: "${process.env.GITHUB_USERNAME}", name: "${process.env.GITHUB_USERNAME}") {
+                object(expression: "master:README.md") {
+                    ... on Blob {
+                        text
+                    }
+                }
+            }
+        }
+        `,
+        }),
+    })
+        .then((res) => res.json())
+        .then((res) => res.data.repository.object.text);
+}
