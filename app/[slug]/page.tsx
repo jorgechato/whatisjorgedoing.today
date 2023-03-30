@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+
 import { Article } from '@/components/cms/Article';
 import { GetArticlesMetadata, GetArticleContent } from '@/components/cms/FetchData';
 import { ArticleMetadata } from '@/components/cms/ArticleMetadata';
@@ -12,8 +13,12 @@ export const generateStaticParams = async (): Promise<any[]> => {
 };
 
 export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
-    const article: ArticleMetadata = await GetArticleContent(params.slug).data as ArticleMetadata;
-    return { title: article.title }
+    const article = GetArticleContent(params.slug);
+
+    if (!article) return { title: "Article not found!" };
+
+    const articleMetadata: ArticleMetadata = article.data as ArticleMetadata;
+    return { title: articleMetadata.title }
 }
 
 export default function ArticlePage(props: any) {
@@ -21,7 +26,7 @@ export default function ArticlePage(props: any) {
 
     return (
         <>
-            <Article slug={slug}/>
+            <Article slug={slug} />
         </>
     );
 };
