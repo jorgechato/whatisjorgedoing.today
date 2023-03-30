@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+
 import { format } from 'date-fns'
 import Markdown from 'markdown-to-jsx';
 
@@ -6,8 +8,11 @@ import { H1Font } from '../Fonts';
 
 
 export function Article(props: any) {
-    const slug = props.slug;
+    const {slug} = props;
     const article = GetArticleContent(slug);
+
+    if (!article) return notFound();
+    
     const date = format(new Date(article.data.date), 'dd LLL yyyy');
 
     return (
