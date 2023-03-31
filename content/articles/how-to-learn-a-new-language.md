@@ -6,7 +6,7 @@ categories:
 - code 
 tags:
 - code
-toc: true
+toc: false
 summary: |
   The language is one of many things that make us humans.
   It let us to communicate each others and broadcast our ideas and thoughts.

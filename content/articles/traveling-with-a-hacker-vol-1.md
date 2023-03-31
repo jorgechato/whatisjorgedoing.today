@@ -10,7 +10,7 @@ tags:
 - terminal
 - traveling-with-a-hacker
 - hack
-toc: true
+toc: false
 summary: |
   I am now on my vacations traveling around Japan.
   As I always do as soon as I'm connected to a wifi,
@@ -28,7 +28,7 @@ First of all I need to add a **disclaimer** here. The techniques I am using are 
 
 I came back to my _Shared House_ after exploring the city when the lag in my iPhone started to annoy me. Men, I was in Japan, the fastest Internet connection in the world. The trigger for this experiment was the frustration of uploading to instagram a picture that takes forever.
 
-<img src="/img/2019/10/IMG_0873.jpg" caption="Figuring out why the Wifi is so slow in the Share House">
+<img src="/img/2019/10/IMG_0873.jpg"/>
 
 You probably expect the video surveillance system to be secure in any venue. Curious enough in my first Share House in Tokyo this wasn't the case. In fact the router was _"more secure"_ than the repeaters and the surveillance system.
 

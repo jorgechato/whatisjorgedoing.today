@@ -22,9 +22,7 @@ This article is a **Writeups** for the  [_Basic Pentesting_ room](https://tryhac
 
 <img src="/img/2020/03/image.png">
 
-**1️. Deploy the machine and connect to our network**
-
-**2️. Find the services exposed by the machine**
+## Find the services exposed by the machine
 
 ```bash
 $ nmap -sC -sV <IP>
@@ -82,7 +80,9 @@ If we open this IP in the browser we see a server sunning.
 
 <img src="/img/2020/03/image-2.png">
 
-**3. What is the name of the hidden directory on the web server(enter name without /)?**
+## The web server
+
+> What is the name of the hidden directory on the web server(enter name without /)?
 
 ```html
 <!-- Check our dev note section if you need to know what to worck on. -->
@@ -96,9 +96,9 @@ We could use [gobuster](https://github.com/OJ/gobuster) to search for directorie
 
 <img src="/img/2020/03/image-8.png">
 
-**4. User brute-forcing to find the username & password**
+## The username
 
-**5. What is the username?**
+> User brute-forcing to find the username & password
 
 We have smbd open, that can give us a lot of information. We can use Enum4linux for that. Since I don't have the tool installed on my machine and handling all the dependencies may be a nightmare let's use docker.
 
@@ -108,7 +108,9 @@ $ docker run --rm -it enum4linux -a <IP>
 
 2 users pop up, **jan** a.k.a. J and **kay** a.k.a. K.
 
-**6. What is the password? + 7. What service do you use to access the server(answer in abbreviation in all caps)?**
+## The password
+
+> What service do you use to access the server(answer in abbreviation in all caps)
 
 Seen the input field we can assume the password is pretty simple, a brute force approach should unlock it.
 
@@ -124,13 +126,14 @@ $ hydra -l jan -P rockyou.txt ssh:<ip>
 login: jan   password: armando
 ```
 
-**8. Enumerate the machine to find any vectors for privilege escalation**
+> Enumerate the machine to find any vectors for privilege escalation
 
-**9. What is the name of the other user you found(all lower case)?**
+> **What is the name of the other user you found(all lower case)?**
+> We already have this information from point 5.
 
-We already have this information from point 5.
-
-**10. If you have found another user, what can you do with this information? + 11. What is the final password you obtain?**
+## If you have found another user
+> what can you do with this information?
+> What is the final password you obtain?
 
 Awesome, now we can login with SSH as `jan` . Listing the file in jan directory doesn’t give us any answer to escalating the privilege. Still, remember we have the user kay? Let’s find it out.
 

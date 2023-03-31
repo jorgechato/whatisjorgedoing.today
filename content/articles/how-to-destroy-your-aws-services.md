@@ -49,9 +49,8 @@ The EC2 instance will hold **three containers**, this containers are described i
 
 This overall view of the architecture and services is enough to start questioning some scenarios. As lazy developers we always need to thing about automation, otherwise you will be loosing time, money and let's be real it is not fun at all. After all in the process of automation you end up learning new technologies and techniques.
 
-## Let's do some CHAOS
-
----
+## The CHAOS
+> Let's do some CHAOS
 
 In a nutshell Chaos engineering is experimenting on a software system in production in order to build confidence in the system's capability. It allows you to ask questions you won't necessarily think about while developing.
 

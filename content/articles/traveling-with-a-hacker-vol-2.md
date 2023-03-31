@@ -10,7 +10,7 @@ tags:
 - terminal
 - traveling-with-a-hacker
 - hack
-toc: true
+toc: false
 summary: |
   I am now on my vacations traveling around Japan.
   As I always do as soon as I'm connected to a wifi,

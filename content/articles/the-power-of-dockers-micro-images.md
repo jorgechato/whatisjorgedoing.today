@@ -14,7 +14,7 @@ tags:
 - pipeline
 - microservice
 - golang-journey
-toc: true
+toc: false
 summary: |
   A Golang journey is a series of articles about golang as microservice.
   It is a complementary set for the platform journey series.
@@ -23,6 +23,8 @@ summary: |
 
 
 I know, It might be difficult sometimes, the process of **building your images** with any kind of constrain (monetary, computational, size...) was always kept me awake at night.
+
+## Docker multistage builds
 
 After all building a **super small image** is always a good idea. It doesn't matter the outcome, your client might be happier spending less resources, you might be happier to have more space to deploy more services in the same instance or cluster...
 
@@ -50,9 +52,12 @@ There are some reasons to go for an image from scratch beside the size of the re
 
 Attack surface is less provable because  we reduce the dependencies (layers) on other images, meaning what's really needed to execute your application is in the image. Handling the required dependencies ourselves for our application is the price we pay for  the goodies of a base image.
 
-## How does a [pipeline](https://travis-ci.com/jorgechato/api.jorgechato.com) looks like?
+## The pipeline
+> How does a pipeline looks like?
 
-<img src="/img/2019/09/ecr.png">
+> **You can learn more about it in [this article](/the-cheapest-server-ever#pipeline-in-travis-ci-cd)**
+
+<img src="/img/2019/09/Screenshot-2019-09-01-at-10.38.13.png">
 
 Let's assume our pipeline involves upload and tag an image into **AWS ECR**. After I commit my changes into a repository I get all the feedback about my code analysis and tests in a production like environment.
 

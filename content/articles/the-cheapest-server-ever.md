@@ -71,7 +71,7 @@ $ travis encrypt --pro GITHUB_ACCESS_TOKEN=xxx --add
 $ travis encrypt --org GITHUB_ACCESS_TOKEN=xxx --add
 ```
 
-## Pipeline in Travis (CI/CD)
+## Pipeline in Travis CI-CD
 
 Travis CI can deploy your static files to [GitHub Pages](https://pages.github.com/) after a successful build. Depending on the Work Flow that fit your needs you might want to change the deployment branch. GitHub flow is a lightweight, branch-based workflow and you can know more about it in [this article](https://guides.github.com/introduction/flow/).
 
