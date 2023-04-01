@@ -6,6 +6,7 @@ import Toc from "react-toc";
 
 import { GetArticleContent } from './FetchData';
 import { H1Font } from '../Fonts';
+import { Code } from './Code';
 
 
 export function Article(props: any) {
@@ -39,7 +40,13 @@ export function Article(props: any) {
                             </>
                         )
                     }
-                    <Markdown>
+                    <Markdown options={{
+                        overrides: {
+                            code: {
+                                component: Code,
+                            }
+                        }
+                    }}>
                         {article.content}
                     </Markdown>
                 </article>

@@ -6,6 +6,7 @@ const emoji = require('emoji-dictionary');
 
 import { GetReadme } from "@/components/git/FetchData";
 import { FileSkeleton } from "./ReadmeSkeleton";
+import { Code } from '../cms/Code';
 
 
 export default function Readme() {
@@ -22,9 +23,15 @@ export default function Readme() {
 
     return (
         <article className="prose text-justify text-base">
-            {loading && <FileSkeleton/>}
+            {loading && <FileSkeleton />}
 
-            {!loading && <Markdown>{readme}</Markdown>}
+            {!loading && <Markdown options={{
+                overrides: {
+                    code: {
+                        component: Code,
+                    }
+                }
+            }}>{readme}</Markdown>}
         </article>
     )
 }
