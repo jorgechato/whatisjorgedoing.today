@@ -1,5 +1,6 @@
 'use client';
 import './globals.css';
+import 'highlight.js/styles/github-dark.css';
 
 import { Analytics } from '@vercel/analytics/react';
 
