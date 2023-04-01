@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         bg: 'var(--colors-bg)',
+        'bg-code': '#0d1117',
         body: 'var(--colors-body)',
         headings: 'var(--colors-headings)',
         primary: 'var(--colors-primary)',
@@ -90,8 +91,8 @@ module.exports = {
               },
             },
             pre: {
-              backgroundColor: theme('colors.bg'),
-              border: `1px solid ${theme('colors.grey.light')}`,
+              backgroundColor: theme('colors.bg-code'),
+              // border: `1px solid ${theme('colors.grey.light')}`,
               color: theme('colors.body'),
               fontFamily: theme('fontFamily.mono'),
             },
