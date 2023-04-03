@@ -10,6 +10,8 @@ import java from 'highlight.js/lib/languages/java';
 import typescript from 'highlight.js/lib/languages/typescript';
 import go from 'highlight.js/lib/languages/go';
 import python from 'highlight.js/lib/languages/python';
+import php from 'highlight.js/lib/languages/php';
+import sql from 'highlight.js/lib/languages/sql';
 
 
 export function RegisterLanguages(): void {
@@ -29,4 +31,6 @@ export function RegisterLanguages(): void {
     hljs.registerLanguage('typescript', typescript);
     hljs.registerLanguage('go', go);
     hljs.registerLanguage('python', python);
+    hljs.registerLanguage('php', php);
+    hljs.registerLanguage('sql', sql);
 }
