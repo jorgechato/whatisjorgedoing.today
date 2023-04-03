@@ -12,7 +12,6 @@ module.exports = {
     extend: {
       colors: {
         bg: 'var(--colors-bg)',
-        'bg-code': '#0d1117',
         body: 'var(--colors-body)',
         headings: 'var(--colors-headings)',
         primary: 'var(--colors-primary)',
@@ -32,6 +31,10 @@ module.exports = {
           darker: 'var(--colors-grey-darker)',
           darkest: 'var(--colors-grey-darkest)',
         },
+        code: {
+          'bg': '#0d1117',
+          'color': '#c9d1d9',
+        }
       },
       borderColor: (theme) => ({
         default: theme('colors.grey-light'),
@@ -91,19 +94,18 @@ module.exports = {
               },
             },
             pre: {
-              backgroundColor: theme('colors.bg-code'),
-              // border: `1px solid ${theme('colors.grey.light')}`,
+              backgroundColor: theme('colors.code.bg'),
               color: theme('colors.body'),
               fontFamily: theme('fontFamily.mono'),
             },
             'pre code': {
               fontSize: theme('text.sm'),
             },
-            'pre code::before': {
-              content: 'inherit',
-            },
-            'pre code::after': {
-              content: 'inherit',
+            '.nohighlight': {
+              backgroundColor: theme('colors.code.bg'),
+              color: theme('colors.code.color'),
+              padding: '0.2rem',
+              borderRadius: '3px',
             },
             code: {
               color: theme('colors.body'),

@@ -6,7 +6,7 @@ import Toc from "react-toc";
 
 import { GetArticleContent } from './FetchData';
 import { H1Font } from '../Fonts';
-import { Code } from './Code';
+import { Code } from '../git/Code';
 
 
 export function Article(props: any) {

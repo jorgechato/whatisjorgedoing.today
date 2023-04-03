@@ -6,7 +6,7 @@ const emoji = require('emoji-dictionary');
 
 import { GetReadme } from "@/components/git/FetchData";
 import { FileSkeleton } from "./ReadmeSkeleton";
-import { Code } from '../cms/Code';
+import { Code } from './Code';
 
 
 export default function Readme() {
