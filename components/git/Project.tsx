@@ -1,4 +1,4 @@
-import { PinnedRepos } from './FetchData';
+import { PinnedRepos } from '@/lib/github/FetchData';
 
 
 export function Project(props: { repo: PinnedRepos }) {

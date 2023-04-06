@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import Markdown from 'markdown-to-jsx';
 const emoji = require('emoji-dictionary');
 
-import { GetReadme } from "@/components/git/FetchData";
 import { FileSkeleton } from "./ReadmeSkeleton";
 import { Code } from './Code';
+import { GetReadme } from './GetData';
 
 
 export default function Readme() {

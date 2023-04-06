@@ -1,9 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
-import { PinnedRepos, GetPinnedRepos } from './FetchData'
+import { PinnedRepos } from '@/lib/github/FetchData';
 import { Project } from './Project';
-import { ProjectSkeleton } from './ProjectSkeleton'
+import { ProjectSkeleton } from './ProjectSkeleton';
+import { GetPinnedRepos } from './GetData';
 
 
 export function ProjectList(props: any) {
