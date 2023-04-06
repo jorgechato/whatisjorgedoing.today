@@ -4,7 +4,6 @@ const nextConfig = {
     appDir: true,
   },
   env: {
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
     GITHUB_USERNAME: process.env.GITHUB_USERNAME,
     GA_MEASUREMENT_ID: process.env.GA_MEASUREMENT_ID,
   },
