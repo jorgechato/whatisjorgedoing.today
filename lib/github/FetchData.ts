@@ -73,3 +73,28 @@ export function GetReadme(): Promise<string> {
         .then((res) => res.json())
         .then((res) => res.data.repository.object.text);
 }
+
+
+export function GetStatus(): Promise<string> {
+    return fetch("https://api.github.com/graphql", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+        },
+        body: JSON.stringify({
+            query: `
+        query {
+            user(login: "${process.env.GITHUB_USERNAME}") {
+                status {
+                    emoji
+                    message
+                }
+            }
+        }
+        `,
+        }),
+    })
+        .then((res) => res.json())
+        .then((res) => res.data.user.status.message);
+}
