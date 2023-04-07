@@ -1,11 +1,17 @@
+const title = 'WHAT IS JORGE</br>DOING TODAY?';
+
 module.exports = {
   ARTICLES_LOCATION: 'content/articles',
-  TITLE: 'WHAT IS JORGE</br>DOING TODAY?',
+  TITLE: title,
   SITE_MAP: [
     {
       name: 'Home',
       url: '/',
       location: 'content/home.md',
+    },
+    {
+      name: 'Status',
+      url: '/status',
     },
     {
       name: 'About',
@@ -17,24 +23,23 @@ module.exports = {
       url: '/archive',
     },
   ],
-  ECHOSYSTEM: [
+
+  STATUS: [
     {
       name: 'JORGE</br>CHATO',
-      description: 'Personal website',
-      url: 'https://jorgechato.com',
-      color: '',
+      url: 'https://jorgechato.com/api/health-check',
     },
     {
       name: 'WHERE IS</br>JORGE TODAY?',
-      description: 'Funny project to track my location and events',
-      url: 'https://whereisjorge.today',
-      color: '',
+      url: 'https://whereisjorge.today/api/health-check',
     },
     {
       name: 'NO APTO</br>EN ASIA',
-      description: 'Podcast about my experience in Asia',
-      url: 'https://noaptoen.asia',
-      color: '',
+      url: 'https://noaptoen.asia/api/health-check',
+    },
+    {
+      name: title,
+      url: '/api/health-check',
     },
   ],
 

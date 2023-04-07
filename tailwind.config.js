@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors')
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,6 +15,7 @@ module.exports = {
     extend: {
       colors: {
         bg: 'var(--colors-bg)',
+        accent: colors.emerald[600],
         body: 'var(--colors-body)',
         headings: 'var(--colors-headings)',
         primary: 'var(--colors-primary)',
