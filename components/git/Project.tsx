@@ -8,7 +8,7 @@ export function Project(props: { repo: PinnedRepos }) {
         <>
             <a href={repo.url} target='_blank'
                 className="border border-grey-light rounded-md p-4
-            transition duration-500 hover:border-emerald-600">
+            transition duration-500 hover:border-accent">
                 <div className="flex space-x-4">
                     <div className="flex-1 space-y-6 py-1">
                         <div className="font-semibold">
