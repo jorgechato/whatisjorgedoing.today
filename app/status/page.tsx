@@ -1,6 +1,5 @@
 import { H1Font } from '@/components/Fonts';
 import { StatusType } from '@/lib/status/FetchData';
-import { Logo } from '@/components/Logo';
 import { Indicator } from '@/components/status/Indicator';
 
 

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { ArticleList } from '@/components/cms/ArticleList';
 import { H1Font } from '@/components/Fonts';
 import { ProjectList } from '@/components/git/ProjectList';
-import { Status } from '@/components/git/Status';
 
 
 export const metadata = {
