@@ -15,6 +15,7 @@ export interface Status {
     version?: string;
     description?: string;
     color?: string;
+    watching?: string;
 }
 
 
@@ -23,6 +24,7 @@ export function GetStatus(url: string, name: string): Promise<Status> {
         return Promise.resolve({
             type: StatusType.UNKNOWN,
             url: "",
+            watching: url,
             name: name,
         } as Status);
     }
@@ -52,11 +54,16 @@ export function GetStatus(url: string, name: string): Promise<Status> {
             }
             return res.json() as Promise<Status>;
         })
+        .then((status) => {
+            status.watching = url;
+            return status;
+        })
         .catch((err) => {
             console.error(err)
             return {
                 type: StatusType.MAJOR,
                 url: new URL(url).origin,
+                watching: url,
                 name: name,
             } as Status;
         });
