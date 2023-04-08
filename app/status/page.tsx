@@ -12,7 +12,7 @@ export default function StatusPage() {
                 Status Page
             </h1>
 
-            <ul className="opacity-50 cursor-pointer hover:opacity-100 transition duration-300
+            <ul className="opacity-25 cursor-pointer hover:opacity-100 transition duration-500
             border border-grey-light rounded-md p-6 mt-10 mb-10
             text-center columns-3 gap-2">
                 {Object.keys(StatusType).map((type: string, index: number) => {
