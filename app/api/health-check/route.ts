@@ -14,5 +14,13 @@ export async function GET() {
         version: packageInfo.version,
     };
 
-    return NextResponse.json(status);
+    return NextResponse.json(status, {
+        headers: {
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0',
+        },
+    });
+
 }
