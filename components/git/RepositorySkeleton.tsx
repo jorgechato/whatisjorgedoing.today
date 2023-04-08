@@ -1,4 +1,4 @@
-export function ProjectSkeleton(props: { cards: number } = { cards: 1 }) {
+export function RepositorySkeleton(props: { cards: number } = { cards: 1 }) {
     return (
         <>
             {Array(props.cards).fill(0).map((_, index) => {

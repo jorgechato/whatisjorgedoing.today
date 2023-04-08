@@ -3,7 +3,8 @@ import { useEffect } from 'react';
 
 import hljs from 'highlight.js/lib/core';
 
-export function Code({ className, children }: any) {
+
+export function CodeBlock({ className, children }: any) {
   const language: string = className?.replace('lang-', '') || '';
 
   if (language == '') return <code className="before:content-[''] after:content-[''] nohighlight">{children}</code>;

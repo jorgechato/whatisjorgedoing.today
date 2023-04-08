@@ -5,7 +5,7 @@ import Markdown from 'markdown-to-jsx';
 const emoji = require('emoji-dictionary');
 
 import { FileSkeleton } from "./ReadmeSkeleton";
-import { Code } from './Code';
+import { CodeBlock } from './CodeBlock';
 import { GetReadme } from './GetData';
 
 
@@ -28,7 +28,7 @@ export default function Readme() {
             {!loading && <Markdown options={{
                 overrides: {
                     code: {
-                        component: Code,
+                        component: CodeBlock,
                     }
                 }
             }}>{readme}</Markdown>}

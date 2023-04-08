@@ -11,9 +11,7 @@ export interface Social {
 }
 
 
-export interface Echosystem {
+export interface Status {
     name: string;
-    description: string;
     url: string;
-    color: string;
 }

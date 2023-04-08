@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 
 import { ThemeButton } from './ThemeButton';
-import { RegisterLanguages } from './git/RegisterLanguages';
+import { RegisterLanguages } from '@/lib/github/RegisterLanguages';
 import { Logo } from './Logo';
 
 const config: { [key: string]: any } = require('@/my.config.js');

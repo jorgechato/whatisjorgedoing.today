@@ -1,11 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-import { Status, StatusType } from '@/lib/status/FetchData';
+import { Status, StatusType } from '@/lib/status-page/FetchData';
 import Link from 'next/link'
 
 import { TitleFont } from './Fonts';
-import { Indicator } from './status/Indicator';
+import { Indicator } from './status-page/Indicator';
 
 
 export function Logo({ appName, url, discover }: { appName: string, url: string, discover?: boolean }) {

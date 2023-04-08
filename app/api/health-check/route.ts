@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-import { Status, StatusType } from '@/lib/status/FetchData';
+import { Status, StatusType } from '@/lib/status-page/FetchData';
 import packageInfo from '@/package.json';
 
 const config: { [key: string]: any } = require('@/my.config.js');

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Social, SiteMap } from './ConfigType';
+import { Social, SiteMap } from '@/lib/ConfigType';
 
 const config: { [key: string]: any } = require('@/my.config.js');
 
@@ -24,7 +24,6 @@ export function Footer() {
         </li>
     ));
     const year = new Date().getFullYear();
-    const author = process.env.npm_package_author_name;
 
     return (
         <>

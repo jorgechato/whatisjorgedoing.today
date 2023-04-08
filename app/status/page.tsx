@@ -1,6 +1,7 @@
 import { H1Font } from '@/components/Fonts';
-import { StatusType } from '@/lib/status/FetchData';
-import { Indicator } from '@/components/status/Indicator';
+import { StatusType } from '@/lib/status-page/FetchData';
+import { Indicator } from '@/components/status-page/Indicator';
+import { ProjectList } from '@/components/status-page/ProjectList';
 
 
 
@@ -24,12 +25,7 @@ export default function StatusPage() {
                 })}
             </ul>
 
-            <ul className='grid text-3xl md:grid-cols-2 xs:grid-cols-1 gap-4 mt-10'>
-                <li className='text-center'>
-                </li>
-                <li className='text-center'>
-                </li>
-            </ul>
+            <ProjectList />
         </>
     );
 }

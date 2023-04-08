@@ -1,7 +1,7 @@
 import { PinnedRepos } from '@/lib/github/FetchData';
 
 
-export function Project(props: { repo: PinnedRepos }) {
+export function Repository(props: { repo: PinnedRepos }) {
     const repo: PinnedRepos = props.repo;
 
     return (

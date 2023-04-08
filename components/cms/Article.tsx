@@ -6,7 +6,7 @@ import Toc from "react-toc";
 
 import { GetArticleContent } from './FetchData';
 import { H1Font } from '../Fonts';
-import { Code } from '../git/Code';
+import { CodeBlock } from '../git/CodeBlock';
 
 
 export function Article(props: any) {
@@ -43,7 +43,7 @@ export function Article(props: any) {
                     <Markdown options={{
                         overrides: {
                             code: {
-                                component: Code,
+                                component: CodeBlock,
                             }
                         }
                     }}>

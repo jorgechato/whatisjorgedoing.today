@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { ArticleList } from '@/components/cms/ArticleList';
 import { H1Font } from '@/components/Fonts';
-import { ProjectList } from '@/components/git/ProjectList';
+import { RepositoryList } from '@/components/git/RepositoryList';
 
 
 export const metadata = {
@@ -15,7 +15,7 @@ export default function Home() {
             <div className={`text-xl mb-4 ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
                 <span className="text-grey-darkest">#</span> Projects
             </div>
-            <ProjectList />
+            <RepositoryList />
 
             <Link href="/archive">
                 <div className={`text-xl ${H1Font.className} my-4`} style={{ fontWeight: 'bold' }}>
