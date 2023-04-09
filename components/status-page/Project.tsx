@@ -13,7 +13,6 @@ export function Project({ url, name }: { url: string, name: string }) {
     useEffect(() => {
         GetStatus(url, name).then((status: Status) => {
             setStatus(status);
-            console.log(status);
             setLoading(false);
         });
     }, []);

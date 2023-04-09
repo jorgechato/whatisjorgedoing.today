@@ -35,7 +35,7 @@ module.exports = {
     },
     {
       name: 'NO APTO</br>EN ASIA',
-      url: 'https://noaptoen.asia/api/health-check/',
+      url: 'https://noaptoen.asia/health-check.json',
     },
     {
       name: title,
