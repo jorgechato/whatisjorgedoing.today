@@ -4,6 +4,9 @@ import { Indicator } from '@/components/status-page/Indicator';
 import { ProjectList } from '@/components/status-page/ProjectList';
 
 
+export const metadata = {
+    title: 'Status Page',
+};
 
 export default function StatusPage() {
     return (
