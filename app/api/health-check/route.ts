@@ -12,6 +12,7 @@ export async function GET() {
         type: StatusType.OK,
         url: 'https://whatisjorgedoing.today',
         version: packageInfo.version,
+        description: packageInfo.description,
     };
 
     return NextResponse.json(status, {
