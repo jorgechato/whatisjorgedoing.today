@@ -1,7 +1,7 @@
 {
   "name": "whatisjorgedoing.today",
   "author": "Jorge Chato",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Where I share some crazy proyects I'm working on",
   "private": true,
   "scripts": {
