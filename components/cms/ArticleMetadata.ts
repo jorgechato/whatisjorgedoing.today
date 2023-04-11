@@ -7,4 +7,5 @@ export interface ArticleMetadata {
     tags: string[];
     toc: boolean;
     summary: string;
+    draft?: boolean;
 }

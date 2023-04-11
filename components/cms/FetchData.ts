@@ -42,10 +42,13 @@ export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[]
             tags: article.data.tags,
             toc: article.data.toc,
             summary: article.data.summary,
+            draft: article.data.draft ?? false,
         };
-    }).sort(
-        (a, b) => { return new Date(b.date).getTime() - new Date(a.date).getTime(); }
-    ).slice(0, limit);
+    })
+        .filter((article) => !article.draft)
+        .sort(
+            (a, b) => { return new Date(b.date).getTime() - new Date(a.date).getTime(); }
+        ).slice(0, limit);
 
     return articles;
 }
