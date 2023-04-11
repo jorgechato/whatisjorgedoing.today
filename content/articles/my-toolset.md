@@ -13,6 +13,7 @@ tags:
 - vim
 - github
 toc: true
+draft: true
 summary: I always been fascinated with others workflow and daily toolset, learning
   from your peers and share your daily struggles is a good exercise to improve.
 ---
