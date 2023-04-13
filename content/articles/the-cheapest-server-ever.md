@@ -7,7 +7,7 @@ tags:
 - pipeline
 - platform-journey
 - frontend
-- vue/nuxt
+- vue-nuxt
 toc: true
 summary: |
   A Platform journey is a series of articles with the goal of discussing the
