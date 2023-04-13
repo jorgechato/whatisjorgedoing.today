@@ -7,8 +7,8 @@ import { GetArticlesMetadata } from './FetchData';
 import { Tags } from './Tags';
 
 
-export function ArticleList(props: any) {
-    const articlesMetadata: ArticleMetadata[] = GetArticlesMetadata(props.limit);
+export function ArticleList({ limit, tag }: { limit?: number, tag?: string }) {
+    const articlesMetadata: ArticleMetadata[] = GetArticlesMetadata(tag, limit);
 
     const articlesPreview = articlesMetadata.map((article) => {
         const date = format(new Date(article.date), 'dd LLL yyyy');
