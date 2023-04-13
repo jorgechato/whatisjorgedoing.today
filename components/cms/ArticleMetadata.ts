@@ -3,9 +3,8 @@ export interface ArticleMetadata {
     title: string;
     date: string;
     author: string;
-    categories: string[];
     tags: string[];
     toc: boolean;
-    summary: string;
+    summary?: string;
     draft?: boolean;
 }

@@ -38,7 +38,6 @@ export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[]
             title: title,
             date: article.data.date,
             author: article.data.author,
-            categories: article.data.categories,
             tags: article.data.tags,
             toc: article.data.toc,
             summary: article.data.summary,
