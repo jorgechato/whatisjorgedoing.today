@@ -16,9 +16,10 @@ export function ArticleList({ limit, tag }: { limit?: number, tag?: string }) {
         return (
             <li key={article.slug} className="group">
                 <Link href={`/${article.slug}`}>
-                    <span className="font-bold decoration-4
-                    group-hover:underline
-                    decoration-accent transition duration-300">
+                    <span className="font-bold decoration-[3px]
+                    group-hover:decoration-accent group-hover:underline-offset-4
+                    transition-all duration-200
+                    underline decoration-grey-light underline-offset-1">
                         {article.title}
                     </span>
                     <time dateTime="2019-08-31T00:00:00Z" className="text-grey-darkest text-sm md:ml-2 w-full md:w-24 inline-block">

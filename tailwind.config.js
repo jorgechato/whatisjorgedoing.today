@@ -87,14 +87,17 @@ module.exports = {
               borderRadius: '50%',
             },
             a: {
-              borderBottom: `1px dotted ${theme('colors.grey.darker')}`,
               color: theme('colors.current'),
               fontWeight: theme('fontWeight.medium'),
-              textDecoration: 'none',
+              textDecoration: 'underline',
+              textDecorationColor: theme('colors.grey.light'),
+              textDecorationThickness: '3px',
+              transitionProperty: 'all',
+              transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+              transitionDuration: '300ms',
               '&:hover': {
-                backgroundColor: theme('colors.black'),
-                color: theme('colors.white'),
-                borderBottom: 'none',
+                textDecorationColor: theme('colors.accent'),
+                textUnderlineOffset: '4px',
               },
             },
             pre: {
