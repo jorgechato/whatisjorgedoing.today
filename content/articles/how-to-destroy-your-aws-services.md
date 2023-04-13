@@ -89,8 +89,6 @@ ssh $USER@$SERVER \
 
 > All this experiments, as well as the final **[report](https://github.com/jorgechato/platform-tf-chaos/blob/master/report.pdf)** is available in this **[repository](https://github.com/jorgechato/platform-tf-chaos)**. New scenarios might be included.
 
----
-
 ## A dive into the report
 
 If the reverse-proxy is terminated our services won't be reachable from internet although that doesn't prevent applications from running.
@@ -99,8 +97,6 @@ While the reverse-proxy is up and running, a shutdown of any service won't preve
 
 If you had a look at the [**experiments**](https://github.com/jorgechato/platform-tf-chaos/tree/master/experiments) you probably noticed the emptiness of the **rollbacks** section. ECS can handle the shutdown of our services pretty fast triggering the start of a new container.
 
----
-
 Now that we understood the limits of the platform we can have a look at the implementation as code with **terraform**. Follow the next article of this series by searching for the **[platform-journey](/tag/platform-journey/)** tag.
 
 ## Resources
@@ -108,8 +104,6 @@ Now that we understood the limits of the platform we can have a look at the impl
 * [https://github.com/dastergon/awesome-chaos-engineering](https://github.com/dastergon/awesome-chaos-engineering)
 * [https://www.oreilly.com/ideas/chaos-engineering](https://www.oreilly.com/ideas/chaos-engineering)
 * [https://principlesofchaos.org/?lang=ENcontent](https://principlesofchaos.org/?lang=ENcontent)
-
----
 
 ## CHANGELOG
 

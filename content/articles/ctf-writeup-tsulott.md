@@ -171,6 +171,7 @@ OUTPUT: "Tzo0OiJUZXN0IjoyOntzOjc6ImphY2twb3QiO047czo1OiJlbnRlciI7Tjt9"
     
 ## Win the lottery
 Paste the output into the form and voilà:
-### MeePwnCTF{__OMG!!!__Y0u_Are_Milli0naire_N0ww!!___}
+
+> MeePwnCTF{__OMG!!!__Y0u_Are_Milli0naire_N0ww!!___}
 
 ![](/img/ctf/2017/Screenshot_20170715_000809.png)

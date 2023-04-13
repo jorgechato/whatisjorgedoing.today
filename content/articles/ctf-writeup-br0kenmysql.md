@@ -113,7 +113,7 @@ As soon as the random number already exsists in the table **logs** the sql will 
 $ curl --header "X-Forwarded-For: 5641314" "http://139.59.239.133/?id=2%20or%20id=(SELECT%201%20FROM%20logs%20WHERE%20ip=5641314)"
 ```
 
-### MeePwnCTF{_b4by_tr1ck_fixed}
+> MeePwnCTF{_b4by_tr1ck_fixed}
 
 ```html
 <title>Br0kenMySQL</title><h1><pre>
