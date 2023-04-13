@@ -22,7 +22,7 @@ export default function Home() {
                     <span className="text-grey-darkest">#</span> Archive
                 </div>
             </Link>
-            <ArticleList limit="5" />
+            <ArticleList limit={5} />
             <Link href="/archive">
                 <span className="text-grey-darkest text-sm sm:ml-2 w-full sm:w-24">
                     ... More
