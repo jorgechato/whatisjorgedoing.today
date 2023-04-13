@@ -2,17 +2,11 @@
 title: "The power of docker's MICRO images, a Golang journey Vol.1"
 date: "2019-09-15"
 author: Jorge
-categories:
-- code
-- golang
-- pipeline
-- microservice
-- golang-journey 
 tags:
 - code
 - golang
 - pipeline
-- microservice
+- backend
 - golang-journey
 toc: false
 summary: |

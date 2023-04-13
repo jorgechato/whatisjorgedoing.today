@@ -2,12 +2,7 @@
 title: "Traveling with a HACKER Vol.1"
 date: "2019-10-14"
 author: Jorge
-categories:
-- terminal
-- traveling-with-a-hacker
-- hack 
 tags:
-- terminal
 - traveling-with-a-hacker
 - hack
 toc: false

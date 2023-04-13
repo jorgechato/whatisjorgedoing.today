@@ -2,8 +2,6 @@
 title: "How to Learn a New Language"
 date: "2019-08-31"
 author: Jorge
-categories:
-- code 
 tags:
 - code
 toc: false

@@ -2,11 +2,6 @@
 title: "My TOOLSET"
 date: "2020-01-19"
 author: Jorge
-categories:
-- code
-- terminal
-- vim
-- github
 tags:
 - code
 - terminal

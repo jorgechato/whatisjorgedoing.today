@@ -2,10 +2,6 @@
 title: "How to DESTROY your AWS services, a Platform journey Vol.1"
 date: "2019-09-07"
 author: Jorge
-categories:
-- code
-- terraform
-- platform-journey 
 tags:
 - code
 - terraform

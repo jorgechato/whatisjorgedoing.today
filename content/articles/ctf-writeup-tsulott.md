@@ -2,12 +2,9 @@
 title: "MeePwn CTF 2017: TSULOTT"
 date: "2017-07-17"
 author: Jorge
-categories:
-- code
-- architecture
 tags:
-- code
-- architecture
+- hack 
+- ctf
 toc: true
 summary: ""
 ---

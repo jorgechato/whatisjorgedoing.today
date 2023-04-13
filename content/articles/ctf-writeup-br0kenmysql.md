@@ -2,9 +2,6 @@
 title: "MeePwn CTF 2017: Br0kenMySQL"
 date: "2017-07-17"
 author: Jorge
-categories:
-- hack 
-- ctf
 tags:
 - hack 
 - ctf

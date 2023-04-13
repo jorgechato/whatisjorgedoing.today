@@ -2,9 +2,6 @@
 title: "Are Microservices the solution?"
 date: "2023-03-31"
 author: Jorge
-categories:
-- code
-- architecture
 tags:
 - code
 - architecture

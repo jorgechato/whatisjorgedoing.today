@@ -2,24 +2,12 @@
 title: "The CHEAPEST server ever, a Platform journey Vol.2"
 date: "2019-09-22"
 author: Jorge
-categories:
-- code
-- pipeline
-- platform-journey
-- frontend
-- vue
-- javascript
-- github
-- nuxt
 tags:
 - code
 - pipeline
 - platform-journey
 - frontend
-- vue
-- javascript
-- github
-- nuxt
+- vue/nuxt
 toc: true
 summary: |
   A Platform journey is a series of articles with the goal of discussing the
