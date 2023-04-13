@@ -7,6 +7,7 @@ import Toc from "react-toc";
 import { GetArticleContent } from './FetchData';
 import { H1Font } from '../Fonts';
 import { CodeBlock } from '../git/CodeBlock';
+import { Tags } from './Tags';
 
 
 export function Article(props: any) {
@@ -24,6 +25,11 @@ export function Article(props: any) {
                     <h1 className={`text-3xl text-center ${H1Font.className}`}>
                         {article.data.title}
                     </h1>
+
+                    <div className="container font-display text-grey-darkest mx-auto px-4 text-xs mt-4 mb-12 tracking-wide text-center">
+                        <Tags tags={article.data.tags} />
+                    </div>
+
                     <div className="container font-display text-grey-darkest mx-auto px-4 text-xs mt-14 mb-12 tracking-wide text-center">
                         {date}
                     </div>
