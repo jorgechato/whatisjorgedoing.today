@@ -23,7 +23,7 @@ export function GetArticleContent(slug: string) {
     }
 }
 
-export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[] {
+export function GetArticlesMetadata(tag: string = '',limit: number = Infinity): ArticleMetadata[] {
     const folder = config.ARTICLES_LOCATION ?? 'content/articles';
     const files = fs.readdirSync(folder);
     const mdArticles = files.filter((file) => file.endsWith('.md'));
@@ -44,6 +44,7 @@ export function GetArticlesMetadata(limit: number = Infinity): ArticleMetadata[]
             draft: article.data.draft ?? false,
         };
     })
+        .filter((article) => tag == '' || article.tags.includes(tag))
         .filter((article) => !article.draft)
         .sort(
             (a, b) => { return new Date(b.date).getTime() - new Date(a.date).getTime(); }
