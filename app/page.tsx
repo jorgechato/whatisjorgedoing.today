@@ -13,13 +13,13 @@ export default function Home() {
     return (
         <>
             <div className={`text-xl mb-4 ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
-                <span className="text-grey-darkest">#</span> Projects
+                <span className="text-grey-dark">#</span>Projects
             </div>
             <RepositoryList />
 
             <Link href="/archive">
                 <div className={`text-xl ${H1Font.className} my-4`} style={{ fontWeight: 'bold' }}>
-                    <span className="text-grey-darkest">#</span> Archive
+                    <span className="text-grey-dark">#</span>Archive
                 </div>
             </Link>
             <ArticleList limit={5} />
