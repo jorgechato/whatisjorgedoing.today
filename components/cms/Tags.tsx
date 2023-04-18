@@ -7,8 +7,8 @@ export function Tags({ tags, hover = true }: { tags: string[], hover?: boolean }
             {
                 tags.map((tag) => {
                     return (
-                        <span key={tag} className={`bg-grey-lightest text-grey-darkest text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full
-                            ${hover && 'hover:bg-grey-light'} cursor-pointer`}>
+                        <span key={tag} className={`bg-grey-lightest text-grey-darkest text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full cursor-pointer
+                            ${hover && 'hover:bg-grey-light'} transition-all duration-200`}>
                             {hover &&
                                 <Link href={`/tag/${tag}`}>
                                     <samp className='text-grey-dark'>#</samp>{tag}
