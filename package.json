@@ -1,7 +1,7 @@
 {
   "name": "whatisjorgedoing.today",
   "author": "Jorge Chato",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Where I share some crazy proyects I'm working on",
   "private": true,
   "scripts": {
@@ -27,6 +27,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-toc": "^3.1.0",
+    "reading-time": "^1.5.0",
     "tailwindcss": "^3.2.7",
     "typescript": "4.9.5"
   }
