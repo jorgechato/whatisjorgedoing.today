@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 
-import { GetPinnedRepos, PinnedRepos } from '@/lib/github/FetchData';
+import { lib } from '@jorgechato/manyo';
 
 
 export async function GET() {
-  const data: PinnedRepos[] = await GetPinnedRepos();
+  const data: lib.PinnedRepos[] = await lib.GetPinnedRepos();
 
   return NextResponse.json(data);
 }

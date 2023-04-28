@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation';
 
-import { Article } from '@/components/cms/Article';
-import { GetArticlesMetadata, GetArticleContent } from '@/components/cms/FetchData';
-import { ArticleMetadata } from '@/components/cms/ArticleMetadata';
+import {
+    Article, ArticleMetadata,
+    GetArticleContent, GetArticlesMetadata
+} from '@jorgechato/manyo';
 
 
 export const generateStaticParams = async (): Promise<any[]> => {
@@ -21,12 +23,15 @@ export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
     return { title: articleMetadata.title }
 }
 
-export default function ArticlePage(props: any) {
+export default function ArticlePage(props: { params: { slug: string }}) {
     const slug = props.params.slug;
+    const article = Article({slug: slug});
+    
+    if (!article) return notFound();
 
     return (
         <>
-            <Article slug={slug} />
+        {article}
         </>
     );
 };

@@ -1,15 +1,15 @@
 import { NextResponse } from 'next/server';
 
-import { Status, StatusType } from '@/lib/status-page/FetchData';
+import { lib } from '@jorgechato/manyo';
 import packageInfo from '@/package.json';
 
 const config: { [key: string]: any } = require('@/my.config.js');
 
 
 export async function GET() {
-    const status: Status = {
+    const status: lib.StatusPage = {
         name: config.TITLE,
-        type: StatusType.OK,
+        type: lib.StatusPageCode.OK,
         url: 'https://whatisjorgedoing.today',
         version: packageInfo.version,
         description: packageInfo.description,

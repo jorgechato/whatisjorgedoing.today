@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 
-import { GetStatus } from '@/lib/github/FetchData';
+import { lib } from '@jorgechato/manyo';
 
 
 export async function GET() {
-  const data: string = await GetStatus();
+  const data: lib.ProfileStatus = await lib.GetStatus();
 
   return NextResponse.json(data);
 }

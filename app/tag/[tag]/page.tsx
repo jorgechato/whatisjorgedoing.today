@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
 
-import { ArticleList } from '@/components/cms/ArticleList';
-import { H1Font } from '@/components/Fonts';
-import { GetArticlesMetadata } from '@/components/cms/FetchData';
-import { ArticleMetadata } from '@/components/cms/ArticleMetadata';
+import { ArticleList, ArticleMetadata, GetArticlesMetadata } from '@jorgechato/manyo';
 
 
 export const generateStaticParams = async (): Promise<any[]> => {
@@ -22,7 +19,7 @@ export default function Home(props: any) {
 
     return (
         <>
-            <h1 className={`text-2xl mb-6 text-center ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
+            <h1 className="text-2xl mb-6 text-center font-h1 font-bold">
                 <samp className='text-grey-dark'>#</samp>{tag}
             </h1>
             <ArticleList tag={tag} />

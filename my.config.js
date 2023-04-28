@@ -7,7 +7,6 @@ module.exports = {
     {
       name: 'Home',
       url: '/',
-      location: 'content/home.md',
     },
     {
       name: 'Status',
@@ -16,7 +15,6 @@ module.exports = {
     {
       name: 'About',
       url: '/about',
-      location: 'content/about.md',
     },
     {
       name: 'Archive',

@@ -1,8 +1,6 @@
 import Link from 'next/link';
 
-import { ArticleList } from '@/components/cms/ArticleList';
-import { H1Font } from '@/components/Fonts';
-import { RepositoryList } from '@/components/git/RepositoryList';
+import { RepositoryList, ArticleList } from '@jorgechato/manyo';
 
 
 export const metadata = {
@@ -12,13 +10,13 @@ export const metadata = {
 export default function Home() {
     return (
         <>
-            <div className={`text-xl mb-4 ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
+            <div className="text-xl mb-4 font-bold font-h1">
                 <span className="text-grey-dark">#</span>Projects
             </div>
             <RepositoryList />
 
             <Link href="/archive">
-                <div className={`text-xl ${H1Font.className} my-4`} style={{ fontWeight: 'bold' }}>
+                <div className="text-xl font-bold font-h1 my-4">
                     <span className="text-grey-dark">#</span>Archive
                 </div>
             </Link>

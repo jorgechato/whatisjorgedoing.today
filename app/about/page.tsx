@@ -1,4 +1,4 @@
-import Readme from "@/components/git/Readme";
+import { Readme } from "@jorgechato/manyo";
 
 export const metadata = {
     title: 'This is not a simulation or is it?',

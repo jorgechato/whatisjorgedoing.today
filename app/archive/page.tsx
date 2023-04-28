@@ -1,5 +1,4 @@
-import { ArticleList } from '@/components/cms/ArticleList';
-import { H1Font } from '@/components/Fonts';
+import { ArticleList } from '@jorgechato/manyo';
 
 
 export const metadata = {
@@ -9,7 +8,7 @@ export const metadata = {
 export default function Home() {
     return (
         <>
-            <h1 className={`text-2xl mb-6 text-center ${H1Font.className}`} style={{ fontWeight: 'bold' }}>
+            <h1 className="text-2xl mb-6 text-center font-h1 font-bold">
                 Archive
             </h1>
             <ArticleList />
