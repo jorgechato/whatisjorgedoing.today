@@ -1,7 +1,7 @@
 {
   "name": "whatisjorgedoing.today",
   "author": "Jorge Chato",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Where I share some crazy proyects I'm working on",
   "private": true,
   "scripts": {
@@ -11,15 +11,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@jorgechato/manyo": "^1.6.2",
+    "@jorgechato/manyo": "^1.9.2",
     "@tailwindcss/typography": "^0.5.9",
-    "@types/node": "18.14.6",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
+    "@types/node": "^20.1.2",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
     "@vercel/analytics": "^0.1.11",
     "autoprefixer": "^10.4.14",
     "highlight.js": "^11.7.0",
-    "next": "13.2.3",
+    "next": "^13.4.1",
     "postcss": "^8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
